@@ -1,0 +1,4 @@
+# Podcast feeds to scan for candidates. Filled from the AntennaPod OPML export.
+feeds: []
+# - title: Show name
+#   url: https://example.com/feed.xml

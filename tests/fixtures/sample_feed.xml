@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sample Podcast Show</title>
+    <link>https://example.com/podcast</link>
+    <description>A sample test podcast feed</description>
+    <item>
+      <title>Recent Episode One</title>
+      <link>https://example.com/ep1</link>
+      <guid>fixture-guid-ep1</guid>
+      <pubDate>Fri, 20 Nov 2026 12:00:00 +0000</pubDate>
+      <enclosure url="https://example.com/audio/ep1.mp3" type="audio/mpeg" length="12345678" />
+      <itunes:duration>42:15</itunes:duration>
+      <content:encoded><![CDATA[<p>Detailed show notes with <strong>HTML formatting</strong> and &amp; entities.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Recent Episode Two</title>
+      <link>https://example.com/ep2</link>
+      <guid>fixture-guid-ep2</guid>
+      <pubDate>Thu, 19 Nov 2026 09:30:00 +0000</pubDate>
+      <enclosure url="https://example.com/audio/ep2.mp3" type="audio/mpeg" length="87654321" />
+      <description>Plain description notes without extra HTML.</description>
+    </item>
+    <item>
+      <title>Ancient Episode</title>
+      <link>https://example.com/ep3</link>
+      <guid>fixture-guid-ep3</guid>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <enclosure url="https://example.com/audio/ep3.mp3" type="audio/mpeg" length="555555" />
+      <description>Should be filtered out because it exceeds days cutoff.</description>
+    </item>
+  </channel>
+</rss>

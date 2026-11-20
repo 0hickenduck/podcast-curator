@@ -1,0 +1,45 @@
+name: Sync curated RSS
+
+on:
+  issues:
+    types: [edited]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: read
+
+concurrency:
+  group: sync-curated
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.issue.labels.*.name, 'recommendation')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Sync issue to RSS
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/sync_issue_to_rss.py
+
+      - name: Commit and push changes
+        run: |
+          if ! git diff --quiet curated.xml; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+            git add curated.xml
+            git commit -m "Add curated episodes"
+            git push
+          else
+            echo "No changes in curated.xml"
+          fi
