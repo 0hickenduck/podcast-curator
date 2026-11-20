@@ -1,20 +1,10 @@
-<?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
     <title>My Curated Feed</title>
     <link>https://github.com/0hickenduck/podcast-curator</link>
     <description>Hand-picked episodes from podcasts I follow. Audio links point to the original publishers.</description>
     <language>en</language>
     <itunes:author>podcast-curator</itunes:author>
-    <lastBuildDate>Fri, 20 Nov 2026 13:43:13 +0000</lastBuildDate>
-    <item>
-      <title>EconTalk — The Wisdom of Montaigne (with Tyler Cowen)</title>
-      <guid isPermaLink="false">2db795c6-2038-4390-8d87-a285e78b415d</guid>
-      <enclosure url="https://cdn.simplecast.com/media/audio/transcoded/14ea66f7-768f-433c-bff1-0b34ab517bf9/6fdba516-8381-43b0-b29f-59d05512b693/episodes/audio/group/24015ded-682a-43e3-b65e-930efd7358e3/group-item/d19d2296-8d6c-42ee-90ef-d6b2dfd12c71/128_default_tc.mp3?aid=rss_feed&amp;feed=wgl4xEgL" type="audio/mpeg" length="62475534" />
-      <pubDate>Mon, 16 Nov 2026 11:30:00 +0000</pubDate>
-      <link>https://www.econtalk.org/the-wisdom-of-montaigne-with-tyler-cowen/</link>
-      <description>Could a 16th-century Frenchman who spent two decades in a tower library be the first blogger? And could Tyler Cowen achieve immortality not through his books, but because AI has digested everything he’s ever said? Economist Tyler Cowen joins EconTalk’s Russ Roberts to explore the essays of Michel de Montaigne. They discuss what Montaigne got right about education (hire a tutor with a well-formed, not a well-filled, brain) and what he may have gotten wrong about material progress and growth. Along the way: Larry David, Torah study, kidney stones, Cowen’s odds of living to 120, why you should befriend people ten years younger, and Montaigne’s deceptively simple wisdom: when I dance, I dance.</description>
-      <itunes:duration>01:04:46</itunes:duration>
-    </item>
   </channel>
 </rss>
