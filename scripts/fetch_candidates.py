@@ -214,6 +214,13 @@ def main():
     merged = all_new_episodes + kept_old
     merged.sort(key=lambda x: x.get("published", ""), reverse=True)
 
+    # Check if candidate episode IDs have changed compared to existing candidates.json
+    existing_ids = [ep.get("id") for ep in existing_episodes]
+    merged_ids = [ep.get("id") for ep in merged]
+    if os.path.exists(args.out) and existing_ids == merged_ids:
+        print("No changes in candidate episodes; candidates.json remains unchanged.")
+        return
+
     out_dir = os.path.dirname(args.out)
     if out_dir:
         os.makedirs(out_dir, exist_ok=True)
