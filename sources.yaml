@@ -1,4 +1,10 @@
-# Podcast feeds to scan for candidates. Filled from the AntennaPod OPML export.
-feeds: []
-# - title: Show name
-#   url: https://example.com/feed.xml
+# Podcast feeds to scan for candidates. Filled from the AntennaPod OPML export (2026-11-20).
+feeds:
+  - title: EconTalk
+    url: https://feeds.simplecast.com/wgl4xEgL
+  - title: となりの雑談
+    url: https://feeds.megaphone.fm/TBS6714057012
+  - title: 歴史を面白く学ぶコテンラジオ （COTEN RADIO）
+    url: https://anchor.fm/s/8c2088c/podcast/rss
+  - title: 永井玲衣×長井優希乃『Wナガイと哲学対話』
+    url: https://feed.sonicbowl.cloud/rss/eb8cdf54-d5e8-47c4-836b-0b2576c81572/
