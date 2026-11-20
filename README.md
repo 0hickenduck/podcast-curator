@@ -6,7 +6,9 @@ Feed URL: https://0hickenduck.github.io/podcast-curator/curated.xml
 
 ## Issue Format
 Issue label: `recommendation`
-Checked line format: `- [x] `3fa2c19b0d` Show Name — Episode Title (42 min)`
+Checked line format: ``- [x] `3fa2c19b0d` Show Name — Episode Title (42 min)``
+
+Checking a box edits the issue, which runs `.github/workflows/sync_curated.yml`; it looks ids up in the committed `candidates.json`, so commit that file after each fetch.
 
 ## Local Usage
 Install requirements:
