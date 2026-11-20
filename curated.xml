@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>My Curated Feed</title>
+    <link>https://github.com/0hickenduck/podcast-curator</link>
+    <description>Hand-picked episodes from podcasts I follow. Audio links point to the original publishers.</description>
+    <language>en</language>
+    <itunes:author>podcast-curator</itunes:author>
+  </channel>
+</rss>
